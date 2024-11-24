@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const path = require('path');
 
-const MAX_COINS = 999999999999; // 999 billion
+const MAX_COINS = 100e100; // 999 billion
 
 const MIN_DEPOSIT = 900000000000; // 900 billion
 
