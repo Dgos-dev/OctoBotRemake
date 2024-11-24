@@ -1,6 +1,6 @@
 {
   "PREFIX": "#",
-  "dakogOten": "hard07",
+  "dakogOten": "hard",
   "PORT": 8080,
   "WEBVIEW": "https://de2.bot-hosting.net:20236/",
   "RESTART_TIME": 30,
