@@ -15,7 +15,7 @@ const animalEmojis = [
 ];
 
 const itemPrices = {
-    "magicpotion": 10000000000,
+    "magicpotion": 10000000000000,
     "vitamin-d": 50000000,
     "powerpotion": 80000000,
     "rockpotion": 500000000,
@@ -219,11 +219,11 @@ module.exports = {
         petData[userId] = updatedPet;
 
         // Check if pet stats exceed maximum values and adjust if necessary
-        if (petData[userId].attack > 2000) petData[userId].attack = 2000; // Max attack
-        if (petData[userId].hp > 10000) petData[userId].hp = 10000; // Max HP
-        if (petData[userId].defense > 1500) petData[userId].defense = 1500; // Max defense
-        if (petData[userId].speed > 1000) petData[userId].speed = 1000; // Max defense
-if (petData[userId].exp > 9999) petData[userId].exp = 9999;
+        if (petData[userId].attack > 100e100) petData[userId].attack = 100e100; // Max attack
+        if (petData[userId].hp > 100e100) petData[userId].hp = 100e100; // Max HP
+        if (petData[userId].defense > 100e100) petData[userId].defense = 100e100; // Max defense
+        if (petData[userId].speed > 100e100) petData[userId].speed = 100e100; // Max defense
+if (petData[userId].exp > 100e100) petData[userId].exp = 100e100;
         // Write the updated pet data to the file
         savePets(petData);
 
